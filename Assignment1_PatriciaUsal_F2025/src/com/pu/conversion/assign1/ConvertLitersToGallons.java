@@ -4,7 +4,7 @@ public class ConvertLitersToGallons {
 
 	private static final double litersToGallons = 0.264172;
 	
-	public double convert(double liters) {
+	public double convertLiterstoGallons(double liters) {
 		return liters * litersToGallons;
 	}
 }

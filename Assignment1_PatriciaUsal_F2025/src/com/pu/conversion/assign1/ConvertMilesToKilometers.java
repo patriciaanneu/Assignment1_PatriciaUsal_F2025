@@ -4,7 +4,7 @@ public class ConvertMilesToKilometers {
 	
 	private static final double milesToKm = 1.60934;
 	
-	public double convert(double miles) {
+	public double convertMilestoKm(double miles) {
 		return miles * milesToKm;
 	}
 

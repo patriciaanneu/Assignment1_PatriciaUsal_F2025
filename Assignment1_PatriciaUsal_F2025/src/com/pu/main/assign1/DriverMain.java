@@ -36,14 +36,35 @@ public class DriverMain {
 			choice = scanner.nextInt();
 			scanner.nextLine();
 			
-			
-					
-					
+			switch (choice) {
+				case 1:
+					gradeCalculation.calculateCourseGrade(scanner);
+					break;
+				case 2:
+					System.out.print("Enter distance in miles:");
+					double miles  = scanner.nextDouble();
+					System.out.println(miles + " miles = " + milesToKm.convertMilestoKm(miles) + " kilometers");
+					break;
+				case 3:
+					System.out.println("Enter volume in liters: ");
+					double liters = scanner.nextDouble();
+					System.out.println(liters + " liters = " + litersToGallons.convertLiterstoGallons(liters) + " gallons");
+					break;
+				case 4:
+					System.out.print("Enter amount in CAD: ");
+					double cad = scanner.nextDouble();
+					System.out.println(cad + " CAD = " + currencyConversion.currenyConversion(cad) + " UDS");
+					break;
+				case 5:
+					System.out.println("Exiting the Program");
+					break;
+				default:
+					System.out.println("Invalid choice");
 			}
 			
-			}
+			} while (choice != 5);
 		
-
+		scanner.close();
 		
 	}
 
